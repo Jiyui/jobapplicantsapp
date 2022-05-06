@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('home')
 
 @section('content')
     <div class="row">
