@@ -9,7 +9,7 @@ class Applicant extends Model
 {
     use HasFactory;
     protected $fillable =
-    [
+    [   'id',
         'Region',
         'Province',
         'City',
