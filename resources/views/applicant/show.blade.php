@@ -8,7 +8,7 @@
                 <h2>  {{ $applicant->name }}</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('Applicant.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+                <a class="btn btn-primary" href="{{ route('applicants.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>
     </div>
@@ -17,31 +17,73 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Region:</strong>
-                {{ $Applicant->Region }}
+                {{ $applicant->Region }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>applicant Label:</strong>
-                {{ $applicant->applicantLabel }}
+                <strong>Province:</strong>
+                {{ $applicant->Province }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Description:</strong>
-                {{ $applicant->applicantDescription }}
+                <strong>City:</strong>
+                {{ $applicant->City }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Description:</strong>
-                {{ $applicant->applicantStarPath }}
+                <strong>Firstname:</strong>
+                {{ $applicant->firstname }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Description:</strong>
-                {{ $applicant->moreDetailsURL }}
+                <strong>Middlename:</strong>
+                {{ $applicant->middlename }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Lastname:</strong>
+                {{ $applicant->lastname }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Account Status:</strong>
+                {{ $applicant->accountstatus }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Sex:</strong>
+                {{ $applicant->sex }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Age:</strong>
+                {{ $applicant->age }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Marital Status:</strong>
+                {{ $applicant->maritalstatus }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Course:</strong>
+                {{ $applicant->course }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Position Applied:</strong>
+                {{ $applicant->positionapplied }}
             </div>
         </div>
 
