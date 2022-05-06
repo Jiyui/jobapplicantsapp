@@ -1,24 +1,25 @@
 
-@extends('layout.app')
+@extends('home')
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Applicants</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('applicants.create') }}" title="Create a applicant"> <i class="fas fa-plus-circle"></i>
+<div class="card">
+    <div class="card-header">
+        <div class="pull-left">
+            <h3>Applicants<h3>
+        </div>
+        <div class="pull-right">
+            <a class="btn btn-success" href="{{ route('applicants.create') }}" title="Create a applicant">
+                <i class="fas fa-plus-circle"></i>
                 </a>
-            </div>
         </div>
     </div>
 
-    @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif
+    <div class="card-body">
+        @if (session('status'))
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
+            </div>
+        @endif
     <table class="table table-bordered table-responsive-lg">
         <tr>
             <th>ID</th>
