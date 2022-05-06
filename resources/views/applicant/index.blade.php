@@ -52,7 +52,6 @@
                         <a href="{{ route('Applicant.edit', $applicant->id) }}">
                             Edit
                         </a>
-
                         @csrf
                         @method('DELETE')
 
