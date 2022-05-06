@@ -1,13 +1,13 @@
-@extends('layouts.app')
+@extends('layout.app')
 
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Product</h2>
+                <h2>Edit Applicant</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('Applicant.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+                <a class="btn btn-primary" href="{{ route('applicants.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>
     </div>
@@ -22,13 +22,16 @@
             </ul>
         </div>
     @endif
-
-    <form action="{{ route('Applicant.update', $applicant->id) }}" method="POST">
+    <form action="{{ route('applicants.update', $applicant->id) }}" method="POST">
         @csrf
         @method('PUT')
 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>ID:</strong>
+                    <input type="text" name="id" value="{{ $applicant->id }}" class="form-control" placeholder="ID">
+                </div>
                 <div class="form-group">
                     <strong>Region:</strong>
                     <input type="text" name="Region" value="{{ $applicant->Region }}" class="form-control" placeholder="Region">
@@ -52,49 +55,49 @@
                 <div class="form-group">
                     <strong>Firstname:</strong>
                     <input type="text" name="Firstname" class="form-control" placeholder="{{ $applicant->Firstname }}"
-                           value="{{ $applicant->Firstname }}">
+                           value="{{ $applicant->firstname }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Middlename:</strong>
                     <input type="text" name="Middlename" class="form-control" placeholder="{{ $applicant->Middlename }}"
-                           value="{{ $applicant->Middlename }}">
+                           value="{{ $applicant->middlename }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Lastname:</strong>
                     <input type="text" name="Lastname" class="form-control" placeholder="{{ $applicant->Lastname }}"
-                           value="{{ $applicant->Lastname }}">
+                           value="{{ $applicant->lastname }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Sex:</strong>
                     <input type="text" name="Sex" class="form-control" placeholder="{{ $applicant->Sex }}"
-                           value="{{ $applicant->Sex }}">
+                           value="{{ $applicant->sex }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Age:</strong>
                     <input type="text" name="Age" class="form-control" placeholder="{{ $applicant->Age }}"
-                           value="{{ $applicant->Age }}">
+                           value="{{ $applicant->age }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Maritalstatus:</strong>
                     <input type="text" name="Maritalstatus" class="form-control" placeholder="{{ $applicant->Maritalstatus }}"
-                           value="{{ $applicant->Maritalstatus }}">
+                           value="{{ $applicant->maritalstatus }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Course:</strong>
-                    <input type="text" name="Course" class="form-control" placeholder="{{ $applicant->Course }}"
-                           value="{{ $applicant->Course }}">
+                    <input type="text" name="course" class="form-control" placeholder="{{ $applicant->course }}"
+                           value="{{ $applicant->course }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -102,6 +105,13 @@
                     <strong>Position_applied:</strong>
                     <input type="text" name="positionapplied" class="form-control" placeholder="{{ $applicant->positionapplied }}"
                            value="{{ $applicant->positionapplied }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Account Status</strong>
+                    <input type="text" name="accountstatus" class="form-control" placeholder="{{ $applicant->AccountStatus }}"
+                           value="{{ $applicant->accountstatus }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
