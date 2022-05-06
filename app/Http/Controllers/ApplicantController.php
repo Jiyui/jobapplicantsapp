@@ -76,7 +76,8 @@ class ApplicantController extends Controller
      */
     public function edit(Applicant $applicant)
     {
-        return view('applicant.edit', compact('applicant'));
+       // dd($applicant);
+       return view('applicant.edit', compact('applicant'));
     }
 
     /**
