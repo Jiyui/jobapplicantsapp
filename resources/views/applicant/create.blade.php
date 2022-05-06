@@ -7,7 +7,7 @@
                 <h2>Add New Priority</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('Applicant.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+                <a class="btn btn-primary" href="{{ route('applicants.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
             </ul>
         </div>
     @endif
-    <form action="{{ route('Applicant.store') }}" method="POST" >
+    <form action="{{ route('applicants.store') }}" method="POST" >
         @csrf
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
