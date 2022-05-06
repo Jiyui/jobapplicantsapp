@@ -30,36 +30,78 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>applicant Name:</strong>
-                    <input type="text" name="applicantName" value="{{ $applicant->applicantName }}" class="form-control" placeholder="Name">
+                    <strong>Region:</strong>
+                    <input type="text" name="Region" value="{{ $applicant->Region }}" class="form-control" placeholder="Region">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>applicant Label:</strong>
-                    <textarea class="form-control" style="height:50px" name="applicantLabel"
-                              placeholder="Introduction">{{ $applicant->applicantLabel }}</textarea>
+                    <strong>Province:</strong>
+                    <textarea class="form-control" style="height:50px" name="Province"
+                              placeholder="Province">{{ $applicant->Province }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Description:</strong>
-                    <input type="text" name="applicantDescription" class="form-control" placeholder="{{ $applicant->applicantDescription }}"
-                           value="{{ $applicant->applicantDescription }}">
+                    <strong>City:</strong>
+                    <input type="text" name="City" class="form-control" placeholder="{{ $applicant->City }}"
+                           value="{{ $applicant->City }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Image Path:</strong>
-                    <input type="text" name="applicantStarPath" class="form-control" placeholder="{{ $applicant->applicantStarPath }}"
-                           value="{{ $applicant->applicantStarPath }}">
+                    <strong>Firstname:</strong>
+                    <input type="text" name="Firstname" class="form-control" placeholder="{{ $applicant->Firstname }}"
+                           value="{{ $applicant->Firstname }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>More Details URL:</strong>
-                    <input type="text" name="moreDetailsURL" class="form-control" placeholder="{{ $applicant->moreDetailsURL }}"
-                           value="{{ $applicant->moreDetailsURL }}">
+                    <strong>Middlename:</strong>
+                    <input type="text" name="Middlename" class="form-control" placeholder="{{ $applicant->Middlename }}"
+                           value="{{ $applicant->Middlename }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Lastname:</strong>
+                    <input type="text" name="Lastname" class="form-control" placeholder="{{ $applicant->Lastname }}"
+                           value="{{ $applicant->Lastname }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Sex:</strong>
+                    <input type="text" name="Sex" class="form-control" placeholder="{{ $applicant->Sex }}"
+                           value="{{ $applicant->Sex }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Age:</strong>
+                    <input type="text" name="Age" class="form-control" placeholder="{{ $applicant->Age }}"
+                           value="{{ $applicant->Age }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Maritalstatus:</strong>
+                    <input type="text" name="Maritalstatus" class="form-control" placeholder="{{ $applicant->Maritalstatus }}"
+                           value="{{ $applicant->Maritalstatus }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Course:</strong>
+                    <input type="text" name="Course" class="form-control" placeholder="{{ $applicant->Course }}"
+                           value="{{ $applicant->Course }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Position_applied:</strong>
+                    <input type="text" name="positionapplied" class="form-control" placeholder="{{ $applicant->positionapplied }}"
+                           value="{{ $applicant->positionapplied }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
