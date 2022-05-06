@@ -20,4 +20,4 @@ Route::get('/', function () {
 });
 
 
-Route::resource('Applicant', ApplicantController::class);
+Route::resource('applicants', ApplicantController::class);
