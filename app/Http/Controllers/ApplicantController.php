@@ -15,8 +15,8 @@ class ApplicantController extends Controller
      */
     public function index()
     {
-        $applicant = Applicant::all();
-        return view('applicant.index')->with('applicant', $applicant);
+        $applicants = Applicant::all();
+        return view('applicant.index')->with('applicants', $applicants);
     }
 
     /**
@@ -53,7 +53,7 @@ class ApplicantController extends Controller
 
         Applicant::create($request->all());
 
-        return redirect()->route('priority.index')
+        return redirect()->route('applicants.index')
             ->with('success', 'Project created successfully.');
     }
 
@@ -76,7 +76,6 @@ class ApplicantController extends Controller
      */
     public function edit(Applicant $applicant)
     {
-       // dd($applicant);
        return view('applicant.edit', compact('applicant'));
     }
 
@@ -90,15 +89,21 @@ class ApplicantController extends Controller
     public function update(UpdateApplicantRequest $request, Applicant $applicant)
     {
         $request->validate([
-            'priorityName' => 'required',
-            'priorityLabel' => 'required',
-            'priorityDescription' => 'required',
-            'priorityStarPath' => 'required',
-            'moreDetailsURL' => 'required'
+            'id' => 'required',
+            'Region' => 'required',
+            'Province' => 'required',
+            'City' => 'required',
+            'Firstname' => 'required',
+            'Lastname' => 'required',
+            'Sex' => 'required',
+            'Age' => 'required',
+            'Maritalstatus' => 'required',
+            'course' => 'required',
+            'accountstatus' => 'required'
         ]);
         $applicant->update($request->all());
 
-        return redirect()->route('applicant.index')
+        return redirect()->route('applicants.index')
             ->with('success', 'Project updated successfully');
     }
 
@@ -112,7 +117,7 @@ class ApplicantController extends Controller
     {
         $applicant->delete();
 
-        return redirect()->route('priority.index')
+        return redirect()->route('applicants.index')
             ->with('success', 'Project deleted successfully');
     }
 }
