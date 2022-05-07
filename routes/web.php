@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 
-Route::resource('applicants', ApplicantController::class);
+Route::resource('applicants', ApplicantController::class)->middleware('auth');
 
 Auth::routes();
 
