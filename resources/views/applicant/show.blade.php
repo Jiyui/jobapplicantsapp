@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="card">
+    <div class="card container-sm">
         <div class="card-header">
             <div class="pull-left">
                 <h3> Applicants ID: {{ $applicant->id }}</h3>
