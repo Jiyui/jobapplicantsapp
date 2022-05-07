@@ -20,7 +20,7 @@
                 {{ session('status') }}
             </div>
         @endif
-    <table class="table table-bordered table-responsive-lg">
+        <table class="table table-bordered table-responsive-lg">
         <tr>
             <th>ID</th>
             <th>Region</th>
@@ -62,8 +62,8 @@
             </tr>
         @endforeach
     </table>
-
-
+    </div>
+</div>
 @endsection
 
 
