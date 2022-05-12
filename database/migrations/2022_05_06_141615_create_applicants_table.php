@@ -26,7 +26,7 @@ class CreateApplicantsTable extends Migration
             $table->string('maritalstatus');
             $table->string('positionapplied');
             $table->string('course');
-            $table->string('accountstatus');
+            $table->string('accountstatus')->nullable();
             $table->timestamps();
         });
     }
